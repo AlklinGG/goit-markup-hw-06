@@ -737,6 +737,7 @@ input:checked+label>span {
 .sec-three {
     background-color: #F4F4FD;
     width: 320px;
+    min-width: 320px;
     
 }
 
@@ -755,6 +756,10 @@ input:checked+label>span {
     gap: 72px;
     flex-wrap: wrap;
     flex-direction: column;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .sec-three-li {
