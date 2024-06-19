@@ -560,7 +560,7 @@
         </form>
       </div>
     </div> -->
-    <div class="mobile-menu is-open">
+    <!-- <div class="mobile-menu is-open">
       <button class="mobile-mod-btn" type="button">
         <svg class="mobileclose" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
@@ -617,6 +617,81 @@
           </a>
         </li>
       </ul>
+    </div> -->
+    <!--mobile-backdrop-->
+    <div class="mobile-backdrop">
+      <div class="mobile-modal-window">
+        <button class="mobile-mod-btn" type="button">
+          <svg class="mobile-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="mobile-modal-p">Leave your contacts and we will call you back</p>
+        <form>
+          <div class="mobile-form-div">
+            <label class="mobile-label-form" for="user-name">Name</label>
+            <div class="mobile-icon-div">
+              <input
+                class="mobile-input-user"
+                id="user-name"
+                name="user-name"
+                type="text"
+              />
+              <svg class="mobile-form-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="mobile-form-div">
+            <label class="mobile-label-form" for="user-name">Phone</label>
+            <div class="mobile-icon-div">
+              <input class="mobile-input-user" id="tel" name="phone" type="tel" />
+              <svg class="mobile-form-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="mobile-form-div">
+            <label class="mobile-label-form" for="user-name">Email</label>
+            <div class="mobile-icon-div">
+              <input class="mobile-input-user" id="email" name="email" type="email" />
+              <svg class="mobile-form-svg" width="18" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="mobile-com-div">
+            <label class="mobile-label-form" for="user-comment">Comment</label>
+            <textarea
+              class="mobile-textarea"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="mobile-checkbox">
+            <input
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              class="mobile-chck-input visually-hidden"
+            />
+            <label for="user-privacy" class="mobile-chck-label">
+              <span class="mobile-label-span">
+                <svg class="mobile-chck-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg> </span
+              >I accept the terms and conditions of the<a
+                href=""
+                class="mobile-pol-link"
+                >Privacy Policy</a
+              >
+            </label>
+          </div>
+          <button type="submit" class="mobile-send">Send</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>
