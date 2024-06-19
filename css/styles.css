@@ -73,6 +73,7 @@ img {
     .header-link {
         display: flex;
         gap: 40px;
+        margin-right: 120px;
     }
 }
 
@@ -179,8 +180,6 @@ align-items: center;
     .address {
         display: inline-block;
         font-style: normal;
-        margin-left: auto;
-        margin-right: 16px; 
     }
     }
 @media screen and (min-width:1158px){
@@ -196,7 +195,6 @@ align-items: center;
     .address-list {
         display: flex;
         flex-direction: column;
-        margin-left: 122px;
         gap:12px;
     }
  }
@@ -242,9 +240,16 @@ align-items: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding: 72px 0;
     margin: 0 auto;
 }
 @media screen and (min-width:768px){
+    .sec-one {
+        padding-top: 112px;
+        padding-bottom: 112px;
+    }
+}
+@media screen and (min-width:1158px){
     .sec-one {
     padding: 188px 0;
     max-width: 1440px;
@@ -276,7 +281,7 @@ align-items: center;
         max-width: 496px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 48px;
+        margin-bottom: 36px;
     }
 }
 .sec-one-btn {
@@ -318,7 +323,7 @@ align-items: center;
     .sec-two-ul {
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    gap: 48px 24px;
     }
 }
 
@@ -337,7 +342,6 @@ align-items: center;
 }
 @media screen and (min-width:768px) {
 .sec-two-li  {
-    display: calc((100-24px) / 2);
     max-width: 356px;
 }
 }
@@ -775,7 +779,7 @@ padding: 32px 0;
 }
 /*-------------------------------------*/
 /*--------------MODAL-----------*/
-.modal {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -783,6 +787,9 @@ padding: 32px 0;
     height: 100%;
     background-color: rgba(46, 47, 66, 0.4);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4,0,0.2,1);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .modal-p {
@@ -964,4 +971,105 @@ input:checked+label>span {
     fill: #F4F4FD;
 }
 
+.mobile-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 320px;
+    min-height: 640px;
+    background: #ffffff;
+    padding-left: 16px;
+    padding-right: 24px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
 
+.mobile-mod-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4,0,0.2,1),border 250ms cubic-bezier(0.4,0,0.2,1);
+}
+.mobileclose {
+    transition: fill 250ms cubic-bezier(0.4,0,0.2,1);
+}
+.mobile-header-nav {
+    display: flex;
+align-items: center;
+}
+.mobile-ul {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 72px;
+}
+.mobile-li {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 36px; 
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.mobile-address {
+    flex-direction: column;
+    font-style: normal;
+    margin-top: 168px;
+    gap: 24px;
+}
+.mobile-address-list {
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+.mobile-address-link {
+    font-weight: 500;
+    font-size: 20px; 
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-decoration: none;
+    
+}
+.mobile-social {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.mobile-social-li {
+    width: 40px;
+    height: 40px;
+}
+.mobile-links {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4,0,0.2,1);
+}
+.mobile-svg-links {
+    fill: #F4F4FD;
+}
+
+.is-open{
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+}
