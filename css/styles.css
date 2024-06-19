@@ -109,7 +109,7 @@ align-items: center;
         text-transform: uppercase;
         color: #4d5ae5;
         /* margin-right: 76px; */
-        margin-right: 120px;
+        margin-right: 149px;
         text-decoration: none; }
 
 @media screen and (min-width:1158px){
@@ -117,7 +117,16 @@ align-items: center;
         margin-right: 76px;
     }
 }
-        
+.menu {
+    background-color: transparent;
+    border: none;
+}
+
+@media screen and (min-width:768px){
+    .menu {
+        display: none;
+    }
+}
 
  .studio {
     color: #2e2f42;
